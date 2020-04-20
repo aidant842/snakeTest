@@ -1,0 +1,3 @@
+fix highscore
+
+try add rotate snake head

@@ -1,0 +1,15 @@
+add sounds when direction is pressed done
+add sounds when bump into container done
+
+
+implement difficulty levels(bigger game board, faster speed, smaller scale etc) possibly invert keys to for an extreme mode??? done
+
+add game border background done
+
+implement end game function that resets length of snake and resets position done
+
+popup over canvas when game ends showing score in progress
+
+make html and css nicer done
+
+
