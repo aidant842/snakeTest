@@ -59,25 +59,25 @@ window.addEventListener('keydown', (function (keyPress) { // creating event list
     keyPress.preventDefault(); //prevent arrow keys from moving screen
 }));
 
-document.getElementById('rightButton').onclick = function(){
+document.getElementById('buttonRight').onclick = function(){
     if(canPlay === true){
     snake.moveRight();
     }
 }
 
-document.getElementById('upButton').onclick = function(){
+document.getElementById('buttonUp').onclick = function(){
     if(canPlay === true){
     snake.moveUp();
     }
 }
 
-document.getElementById('downButton').onclick = function(){
+document.getElementById('buttonDown').onclick = function(){
     if(canPlay === true){
     snake.moveDown();
     }
 }
 
-document.getElementById('leftButton').onclick = function(){
+document.getElementById('buttonLeft').onclick = function(){
     if(canPlay === true){
     snake.moveLeft();
     }
