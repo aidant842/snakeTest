@@ -11,7 +11,6 @@
 
 body{
     background-color: #181818;
-    
 }
 
 
@@ -30,6 +29,15 @@ html{
     float: left;
     padding: 15px;
   }
+
+  #instructions{
+    color: white;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    clear: none;
+    bottom: 4rem;
+}
 
   /* For mobile phones: */
 [class*="col-"] {
@@ -50,8 +58,13 @@ html{
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+
+    #instructions{
+      font-size: 1.5rem;
   }
-  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 1025px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -65,6 +78,26 @@ html{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    #instructions{
+      color: white;
+      text-align: center;
+      list-style: none;
+      position: relative;
+      clear: none;
+      bottom: 19rem;
+      left: -22rem;
+      font-size: 1.5rem;
+  }
+
+  [id*="button"] {
+    display: none;
+  }
+
+  img{
+    display: none;
+  }
+
   }
 
   /*  <---------- Heading ---------->*/
@@ -78,12 +111,7 @@ html{
       text-align: center;
   }
 
-  #instructions{
-      color: white;
-      text-align: center;
-      list-style: none;
-      position: relative;
-  }
+  
 
   /* .instructionsContainer{
       padding: 0;
@@ -153,10 +181,10 @@ html{
 }
 
   .canvas{
-      position: absolute;
       border: 1px solid white;
       position: relative;
       background-color: #252627;
+      clear: none;
   }
 
   .highScore{
@@ -182,42 +210,55 @@ html{
       margin: 0 auto;
   }
   
-  #upButton{
+  #buttonUp{
     background-color: transparent;
     position: relative;
-    left: 3.1rem;
-    bottom: 5.9rem;
-    height: 2rem;
-    width: 2rem;
+    left: 8.5rem;
+    bottom: 9.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     z-index: 10;
+    border: none;
   }
 
-  #rightButton{
+  #buttonRight{
     background-color: transparent;
     position: relative;
-    left: 3.9rem;
-    bottom: 3rem;
-    height: 2rem;
-    width: 2rem;
+    left: 9.6rem;
+    bottom: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     z-index: 10;
+    border: none;
+    
   }
 
-  #downButton{
+  #buttonDown{
     background-color: transparent;
     position: relative;
-    left: -1.2rem;
-    bottom: 3rem;
-    height: 2rem;
-    width: 2rem;
+    left: 1.1rem;
+    bottom: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     z-index: 10;
+    border: none;
+   
   }
 
-  #leftButton{
+  #buttonLeft{
     background-color: transparent;
     position: relative;
-    left: -6.4rem;
-    bottom: 3rem;
-    height: 2rem;
-    width: 2rem;
+    left: -7.3rem;
+    bottom: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     z-index: 10;
+    border: none;
+  }
+
+  .controllerContainer img{
+    left: 10rem;
+    margin-left: 3rem;
+    height: 10rem;
+    width: 15rem;
   }
